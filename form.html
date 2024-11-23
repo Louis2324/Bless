@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Your Entry Form</h1><hr>
+    <form action="process.php" method="POST" class="centered-form">
+        <fieldset>
+            <legend>Let's get to know you better!</legend>
+
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" required>
+
+            <label for="lname">Middle Name</label>
+            <input type="text" name="lname" id="lname" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="number">Phone Number</label>
+            <input type="number" name="number" id="number" required>
+            <label for="password">Prefered password</label>
+            <input type="password" name="password" id="password"><br>
+            <label for="country">Country</label>
+            <select name="country" id="country" required>
+                <option value="rwanda">Rwanda</option>
+                <option value="kenya">Kenya</option>
+                <option value="uganda">Uganda</option>
+            </select>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>How Do You Identify Yourself?</legend>
+
+            <input type="radio" name="gender" value="male" id="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" value="female" id="female" required>
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" value="other" id="other" required>
+            <label for="other">Other</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hobbies</legend>
+
+            <input type="checkbox" name="hobbies[]" value="reading" id="reading">
+            <label for="reading">Reading</label><br>
+
+            <input type="checkbox" name="hobbies[]" value="travelling" id="travelling">
+            <label for="travelling">Travelling</label><br>
+
+            <input type="checkbox" name="hobbies[]" value="singing" id="singing">
+            <label for="singing">Singing</label><br>
+
+            <label for="other_hobby">Other</label>
+            <input type="text" name="other_hobby" id="other_hobby">
+
+            <label for="bio">About You:</label>
+            <textarea name="bio" id="bio" placeholder="Anything else about you?" required></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

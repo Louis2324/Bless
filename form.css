@@ -1,0 +1,101 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 3em; 
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+
+body {
+    display: flex;
+    flex-direction:column;
+    margin-top:20px ;
+    padding:20px;
+    background-image: url('asian_girl.jfif');
+    background-position:right center;
+    background-size:800px;
+    background-repeat: no-repeat;
+   
+   
+}
+
+.centered-form {
+    background-color: rgba(255, 216, 238, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    text-align: left;
+}
+
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ce39e6;
+    border-radius: 9px;
+}
+
+
+textarea {
+    height: 100px;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #834c65;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(58, 13, 35);
+}
+
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline;
+    margin-right: 10px;
+}
